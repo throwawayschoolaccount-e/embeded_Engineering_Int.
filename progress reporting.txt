@@ -1,0 +1,12 @@
+//to start off I am opposed to the daily repoting, Quality > Quantity.
+
+- Given the freedom of the scope the internship having been given no exact goals I decided to dive into an 
+underrated irreplacable sub section of SE that is Embeded Engineering that's a lucrative endevor that's 
+always and demand that'll help me acquire desirable skills.
+
+- My project goal is to make a linux kurnel running on the STM32 and have the connectivity routed through the
+Raspberry pico 2w, It may sounds basic but using the C\C++ will rampup the difficulty using a lower level 
+language since were dealing with megabytes and megahertz enabling to squeeze out more performance and more 
+barebones is using 32-Bit Assembly  I'm ambitious not a masochist.
+
+- The code will be pushed on the 27/7 to refine and optimize further
