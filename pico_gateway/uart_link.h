@@ -55,4 +55,4 @@ private:
     uint16_t next_seq_ = 0;
 };
 
-} // namespace gateway
+} 
