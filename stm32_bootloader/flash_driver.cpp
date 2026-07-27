@@ -82,4 +82,4 @@ bool erase_flags_sector() {
     return ok;
 }
 
-} // namespace boot
+} 
