@@ -50,4 +50,4 @@ bool flash_write(uint32_t address, const uint8_t* data, size_t len);
 // Erases the 2-page flags sector.
 bool erase_flags_sector();
 
-} // namespace boot
+} 
