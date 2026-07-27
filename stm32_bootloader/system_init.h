@@ -14,4 +14,4 @@ void init();                 // configure SysTick for 1ms ticks
 uint32_t millis();           // milliseconds since boot
 void delay_ms(uint32_t ms);
 
-} // namespace sys
+} 
