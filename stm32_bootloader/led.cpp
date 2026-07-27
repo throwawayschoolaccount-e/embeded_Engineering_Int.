@@ -15,4 +15,4 @@ void on()  { GPIOA->BSRR = (1u << 5); }        // BSRR set bits: pin 5
 void off() { GPIOA->BSRR = (1u << (5 + 16)); } // BSRR reset bits: pin 5 + 16
 void toggle() { GPIOA->ODR ^= (1u << 5); }
 
-} // namespace led
+} 
