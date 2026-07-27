@@ -31,8 +31,7 @@ bool erase_page(uint32_t addr) {
     return true;
 }
 
-} // namespace
-
+} 
 bool erase_bank(Bank bank) {
     flash_unlock();
     uint32_t start = bank_start(bank);
