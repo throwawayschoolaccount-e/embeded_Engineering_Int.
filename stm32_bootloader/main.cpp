@@ -31,7 +31,7 @@ constexpr uint32_t UART_BAUD = 115200;
     while (true) { /* unreachable */ }
 }
 
-} // namespace
+} 
 
 int main() {
     sys::init();
