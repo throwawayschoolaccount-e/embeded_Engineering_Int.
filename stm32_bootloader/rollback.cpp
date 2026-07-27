@@ -78,4 +78,4 @@ bool should_rollback(const BootFlags& flags) {
            flags.boot_attempts >= MAX_BOOT_ATTEMPTS;
 }
 
-} // namespace boot
+} 
