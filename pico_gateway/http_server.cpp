@@ -202,7 +202,7 @@ err_t on_accept(void* arg, struct tcp_pcb* newpcb, err_t err) {
     return ERR_OK;
 }
 
-} // namespace
+} 
 
 void http_server_start(UartLink* link, TransferStatus* status) {
     g_link = link;
@@ -214,4 +214,4 @@ void http_server_start(UartLink* link, TransferStatus* status) {
     tcp_accept(pcb, on_accept);
 }
 
-} // namespace gateway
+} 
