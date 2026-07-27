@@ -8,6 +8,7 @@
 #include <cstdio>
 
 // TODO: move these to a gitignored wifi_credentials.h before committing.
+// these are hardcoded wifi credentials, no one sane will use this projects code
 #define WIFI_SSID "11111"
 #define WIFI_PASSWORD "11111111"
 
@@ -15,7 +16,7 @@ int main() {
     stdio_init_all();
 
     // Wait (briefly) for a terminal to actually open the USB CDC port
-    // before printing anything - otherwise the first prints can be lost
+    // before printing anything otherwise the first prints can be lost
     // if you attach picocom/etc a moment too late.
     for (int i = 0; i < 50 && !stdio_usb_connected(); ++i) {
         sleep_ms(100);
