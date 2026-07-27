@@ -1,0 +1,391 @@
+
+Discarded input sections
+
+ .text          0x00000000        0x0 startup.o
+ .data          0x00000000        0x0 startup.o
+ .bss           0x00000000        0x0 startup.o
+ .text          0x00000000        0x0 main.o
+ .data          0x00000000        0x0 main.o
+ .bss           0x00000000        0x0 main.o
+ .text          0x00000000        0x0 system_init.o
+ .data          0x00000000        0x0 system_init.o
+ .bss           0x00000000        0x0 system_init.o
+ .text          0x00000000        0x0 uart2.o
+ .data          0x00000000        0x0 uart2.o
+ .bss           0x00000000        0x0 uart2.o
+ .text._ZN5uart29send_byteEh
+                0x00000000       0x10 uart2.o
+ .text._ZN5uart212receive_byteEPhm
+                0x00000000       0x40 uart2.o
+ .text          0x00000000        0x0 flash_driver.o
+ .data          0x00000000        0x0 flash_driver.o
+ .bss           0x00000000        0x0 flash_driver.o
+ .group         0x00000000        0x8 rollback.o
+ .group         0x00000000        0x8 rollback.o
+ .text          0x00000000        0x0 rollback.o
+ .data          0x00000000        0x0 rollback.o
+ .bss           0x00000000        0x0 rollback.o
+ .text._ZN4boot24confirm_current_firmwareEv
+                0x00000000       0x38 rollback.o
+ .group         0x00000000        0x8 uart_receiver.o
+ .group         0x00000000        0x8 uart_receiver.o
+ .text          0x00000000        0x0 uart_receiver.o
+ .data          0x00000000        0x0 uart_receiver.o
+ .bss           0x00000000        0x0 uart_receiver.o
+ .bss._ZZN3ota5Crc325tableEvE4init
+                0x00000000        0x1 uart_receiver.o
+ .bss._ZZN3ota5Crc325tableEvE1t
+                0x00000000      0x400 uart_receiver.o
+ .text          0x00000000        0x0 signature_verify.o
+ .data          0x00000000        0x0 signature_verify.o
+ .bss           0x00000000        0x0 signature_verify.o
+ .text          0x00000000        0x0 libc_shim.o
+ .data          0x00000000        0x0 libc_shim.o
+ .bss           0x00000000        0x0 libc_shim.o
+ .text.memset   0x00000000       0x14 libc_shim.o
+ .text.memcmp   0x00000000       0x2c libc_shim.o
+ .text          0x00000000        0x0 led.o
+ .data          0x00000000        0x0 led.o
+ .bss           0x00000000        0x0 led.o
+ .text          0x00000000        0x0 third_party/ed25519/src/verify.o
+ .data          0x00000000        0x0 third_party/ed25519/src/verify.o
+ .bss           0x00000000        0x0 third_party/ed25519/src/verify.o
+ .text          0x00000000        0x0 third_party/ed25519/src/sha512.o
+ .data          0x00000000        0x0 third_party/ed25519/src/sha512.o
+ .bss           0x00000000        0x0 third_party/ed25519/src/sha512.o
+ .text.sha512   0x00000000       0xc8 third_party/ed25519/src/sha512.o
+ .text          0x00000000        0x0 third_party/ed25519/src/ge.o
+ .data          0x00000000        0x0 third_party/ed25519/src/ge.o
+ .bss           0x00000000        0x0 third_party/ed25519/src/ge.o
+ .text.select   0x00000000      0x228 third_party/ed25519/src/ge.o
+ .text.ge_p1p1_to_p2
+                0x00000000       0x34 third_party/ed25519/src/ge.o
+ .text.ge_p1p1_to_p3
+                0x00000000       0x44 third_party/ed25519/src/ge.o
+ .text.ge_p2_0  0x00000000       0x1c third_party/ed25519/src/ge.o
+ .text.ge_p3_0  0x00000000       0x24 third_party/ed25519/src/ge.o
+ .text.ge_p3_dbl
+                0x00000000       0x30 third_party/ed25519/src/ge.o
+ .text.ge_p3_to_cached
+                0x00000000       0x40 third_party/ed25519/src/ge.o
+ .text.ge_p3_to_p2
+                0x00000000       0x28 third_party/ed25519/src/ge.o
+ .text.ge_scalarmult_base
+                0x00000000      0x1d0 third_party/ed25519/src/ge.o
+ .rodata.base   0x00000000     0x7800 third_party/ed25519/src/ge.o
+ .text          0x00000000        0x0 third_party/ed25519/src/fe.o
+ .data          0x00000000        0x0 third_party/ed25519/src/fe.o
+ .bss           0x00000000        0x0 third_party/ed25519/src/fe.o
+ .text.fe_cmov  0x00000000       0xa0 third_party/ed25519/src/fe.o
+ .text.fe_cswap
+                0x00000000      0x114 third_party/ed25519/src/fe.o
+ .text.fe_mul121666
+                0x00000000      0x1c4 third_party/ed25519/src/fe.o
+ .text          0x00000000        0x0 third_party/ed25519/src/sc.o
+ .data          0x00000000        0x0 third_party/ed25519/src/sc.o
+ .bss           0x00000000        0x0 third_party/ed25519/src/sc.o
+ .text.sc_muladd
+                0x00000000     0x206c third_party/ed25519/src/sc.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x08000000         0x00006000         xr
+RAM              0x20000000         0x00005000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD startup.o
+LOAD main.o
+LOAD system_init.o
+LOAD uart2.o
+LOAD flash_driver.o
+LOAD rollback.o
+LOAD uart_receiver.o
+LOAD signature_verify.o
+LOAD libc_shim.o
+LOAD led.o
+LOAD third_party/ed25519/src/verify.o
+LOAD third_party/ed25519/src/sha512.o
+LOAD third_party/ed25519/src/ge.o
+LOAD third_party/ed25519/src/fe.o
+LOAD third_party/ed25519/src/sc.o
+                0x20005000                        _estack = (ORIGIN (RAM) + LENGTH (RAM))
+
+.isr_vector     0x08000000       0x40
+ *(.isr_vector)
+ .isr_vector    0x08000000       0x40 startup.o
+                0x08000000                vector_table
+
+.text           0x08000040     0x52e8
+ *(.text*)
+ .text.Reset_Handler
+                0x08000040       0x40 startup.o
+                0x08000040                Reset_Handler
+ .text.Default_Handler
+                0x08000080        0x2 startup.o
+                0x08000080                Default_Handler
+ *fill*         0x08000082        0x2 
+ .text._ZN12_GLOBAL__N_119jump_to_applicationEm
+                0x08000084       0x20 main.o
+ .text.startup.main
+                0x080000a4       0xd4 main.o
+                0x080000a4                main
+ .text.SysTick_Handler
+                0x08000178       0x10 system_init.o
+                0x08000178                SysTick_Handler
+ .text._ZN3sys4initEv
+                0x08000188       0x14 system_init.o
+                0x08000188                sys::init()
+ .text._ZN3sys6millisEv
+                0x0800019c        0xc system_init.o
+                0x0800019c                sys::millis()
+ .text._ZN3sys8delay_msEm
+                0x080001a8       0x1c system_init.o
+                0x080001a8                sys::delay_ms(unsigned long)
+ .text._ZN5uart24initEm
+                0x080001c4       0x88 uart2.o
+                0x080001c4                uart2::init(unsigned long)
+ .text._ZN5uart211send_bufferEPKhj
+                0x0800024c       0x24 uart2.o
+                0x0800024c                uart2::send_buffer(unsigned char const*, unsigned int)
+ .text._ZN5uart214receive_bufferEPhjm
+                0x08000270       0x68 uart2.o
+                0x08000270                uart2::receive_buffer(unsigned char*, unsigned int, unsigned long)
+ .text._ZN5uart26deinitEv
+                0x080002d8       0x1c uart2.o
+                0x080002d8                uart2::deinit()
+ .text._ZN4boot12_GLOBAL__N_110erase_pageEm
+                0x080002f4       0x34 flash_driver.o
+ .text._ZN4boot10erase_bankENS_4BankE
+                0x08000328       0x54 flash_driver.o
+                0x08000328                boot::erase_bank(boot::Bank)
+ .text._ZN4boot11flash_writeEmPKhj
+                0x0800037c       0x7c flash_driver.o
+                0x0800037c                boot::flash_write(unsigned long, unsigned char const*, unsigned int)
+ .text._ZN4boot18erase_flags_sectorEv
+                0x080003f8       0x40 flash_driver.o
+                0x080003f8                boot::erase_flags_sector()
+ .text._ZN4boot10read_flagsEv
+                0x08000438      0x158 rollback.o
+                0x08000438                boot::read_flags()
+ .text._ZN4boot11write_flagsENS_9BootFlagsE
+                0x08000590       0xac rollback.o
+                0x08000590                boot::write_flags(boot::BootFlags)
+ .text._ZN4boot19mark_update_pendingENS_4BankE
+                0x0800063c       0x28 rollback.o
+                0x0800063c                boot::mark_update_pending(boot::Bank)
+ .text._ZN4boot19record_boot_attemptENS_9BootFlagsE
+                0x08000664       0x3c rollback.o
+                0x08000664                boot::record_boot_attempt(boot::BootFlags)
+ .text._ZN4boot15should_rollbackERKNS_9BootFlagsE
+                0x080006a0       0x18 rollback.o
+                0x080006a0                boot::should_rollback(boot::BootFlags const&)
+ .text._ZN4boot12_GLOBAL__N_114receive_packetEPhPtPN3ota10PacketTypeES2_m
+                0x080006b8      0x14c uart_receiver.o
+ .text._ZN4boot12_GLOBAL__N_116send_ack_or_nackEbt
+                0x08000804       0xb4 uart_receiver.o
+ .text._ZN4boot17listen_for_updateEmNS_4BankE
+                0x080008b8      0x184 uart_receiver.o
+                0x080008b8                boot::listen_for_update(unsigned long, boot::Bank)
+ .text._ZN4boot25verify_firmware_signatureEPKhS1_j
+                0x08000a3c       0x14 signature_verify.o
+                0x08000a3c                boot::verify_firmware_signature(unsigned char const*, unsigned char const*, unsigned int)
+ .text.memcpy   0x08000a50       0x1c libc_shim.o
+                0x08000a50                memcpy
+ .text._ZN3led4initEv
+                0x08000a6c       0x28 led.o
+                0x08000a6c                led::init()
+ .text._ZN3led2onEv
+                0x08000a94        0xc led.o
+                0x08000a94                led::on()
+ .text._ZN3led3offEv
+                0x08000aa0       0x10 led.o
+                0x08000aa0                led::off()
+ .text._ZN3led6toggleEv
+                0x08000ab0       0x10 led.o
+                0x08000ab0                led::toggle()
+ .text.ed25519_verify
+                0x08000ac0      0x1bc third_party/ed25519/src/verify.o
+                0x08000ac0                ed25519_verify
+ .text.sha512_compress
+                0x08000c7c      0xa64 third_party/ed25519/src/sha512.o
+ .text.sha512_final.part.0
+                0x080016e0       0xf0 third_party/ed25519/src/sha512.o
+ .text.sha512_init
+                0x080017d0       0xb0 third_party/ed25519/src/sha512.o
+                0x080017d0                sha512_init
+ .text.sha512_update
+                0x08001880       0xb4 third_party/ed25519/src/sha512.o
+                0x08001880                sha512_update
+ .text.sha512_final
+                0x08001934        0xc third_party/ed25519/src/sha512.o
+                0x08001934                sha512_final
+ .text.slide    0x08001940       0xac third_party/ed25519/src/ge.o
+ .text.ge_add   0x080019ec       0x98 third_party/ed25519/src/ge.o
+                0x080019ec                ge_add
+ .text.ge_frombytes_negate_vartime
+                0x08001a84      0x104 third_party/ed25519/src/ge.o
+                0x08001a84                ge_frombytes_negate_vartime
+ .text.ge_madd  0x08001b88       0x8c third_party/ed25519/src/ge.o
+                0x08001b88                ge_madd
+ .text.ge_msub  0x08001c14       0x8c third_party/ed25519/src/ge.o
+                0x08001c14                ge_msub
+ .text.ge_p2_dbl
+                0x08001ca0       0x70 third_party/ed25519/src/ge.o
+                0x08001ca0                ge_p2_dbl
+ .text.ge_p3_tobytes
+                0x08001d10       0x40 third_party/ed25519/src/ge.o
+                0x08001d10                ge_p3_tobytes
+ .text.ge_sub   0x08001d50       0x98 third_party/ed25519/src/ge.o
+                0x08001d50                ge_sub
+ .text.ge_double_scalarmult_vartime
+                0x08001de8      0x4ec third_party/ed25519/src/ge.o
+                0x08001de8                ge_double_scalarmult_vartime
+ .text.ge_tobytes
+                0x080022d4        0x4 third_party/ed25519/src/ge.o
+                0x080022d4                ge_tobytes
+ .text.fe_0     0x080022d8       0x18 third_party/ed25519/src/fe.o
+                0x080022d8                fe_0
+ .text.fe_1     0x080022f0       0x1c third_party/ed25519/src/fe.o
+                0x080022f0                fe_1
+ .text.fe_add   0x0800230c       0x64 third_party/ed25519/src/fe.o
+                0x0800230c                fe_add
+ .text.fe_copy  0x08002370       0x30 third_party/ed25519/src/fe.o
+                0x08002370                fe_copy
+ .text.fe_frombytes
+                0x080023a0      0x210 third_party/ed25519/src/fe.o
+                0x080023a0                fe_frombytes
+ .text.fe_mul   0x080025b0      0x630 third_party/ed25519/src/fe.o
+                0x080025b0                fe_mul
+ .text.fe_neg   0x08002be0       0x4c third_party/ed25519/src/fe.o
+                0x08002be0                fe_neg
+ .text.fe_sq    0x08002c2c      0x424 third_party/ed25519/src/fe.o
+                0x08002c2c                fe_sq
+ .text.fe_invert
+                0x08003050      0x148 third_party/ed25519/src/fe.o
+                0x08003050                fe_invert
+ .text.fe_pow22523
+                0x08003198      0x144 third_party/ed25519/src/fe.o
+                0x08003198                fe_pow22523
+ .text.fe_sq2   0x080032dc      0x450 third_party/ed25519/src/fe.o
+                0x080032dc                fe_sq2
+ .text.fe_sub   0x0800372c       0x6c third_party/ed25519/src/fe.o
+                0x0800372c                fe_sub
+ .text.fe_tobytes
+                0x08003798      0x244 third_party/ed25519/src/fe.o
+                0x08003798                fe_tobytes
+ .text.fe_isnegative
+                0x080039dc       0x1c third_party/ed25519/src/fe.o
+                0x080039dc                fe_isnegative
+ .text.fe_isnonzero
+                0x080039f8       0xd8 third_party/ed25519/src/fe.o
+                0x080039f8                fe_isnonzero
+ .text.sc_reduce
+                0x08003ad0     0x1180 third_party/ed25519/src/sc.o
+                0x08003ad0                sc_reduce
+ *(.rodata*)
+ .rodata._ZN4boot14OTA_PUBLIC_KEYE
+                0x08004c50       0x20 signature_verify.o
+                0x08004c50                boot::OTA_PUBLIC_KEY
+ .rodata.K      0x08004c70      0x280 third_party/ed25519/src/sha512.o
+ .rodata.d2     0x08004ef0       0x28 third_party/ed25519/src/ge.o
+ .rodata.sqrtm1
+                0x08004f18       0x28 third_party/ed25519/src/ge.o
+ .rodata.d      0x08004f40       0x28 third_party/ed25519/src/ge.o
+ .rodata.Bi     0x08004f68      0x3c0 third_party/ed25519/src/ge.o
+                0x08005328                        _sidata = LOADADDR (.data)
+
+.glue_7         0x08005328        0x0
+ .glue_7        0x08005328        0x0 linker stubs
+
+.glue_7t        0x08005328        0x0
+ .glue_7t       0x08005328        0x0 linker stubs
+
+.vfp11_veneer   0x08005328        0x0
+ .vfp11_veneer  0x08005328        0x0 linker stubs
+
+.v4_bx          0x08005328        0x0
+ .v4_bx         0x08005328        0x0 linker stubs
+
+.iplt           0x08005328        0x0
+ .iplt          0x08005328        0x0 startup.o
+
+.rel.dyn        0x08005328        0x0
+ .rel.iplt      0x08005328        0x0 startup.o
+
+.data           0x20000000        0x0 load address 0x08005328
+                0x20000000                        _sdata = .
+ *(.data*)
+                0x20000000                        _edata = .
+
+.igot.plt       0x20000000        0x0 load address 0x08005328
+ .igot.plt      0x20000000        0x0 startup.o
+
+.bss            0x20000000      0x408 load address 0x08005328
+                0x20000000                        _sbss = .
+ *(.bss*)
+ .bss._ZN12_GLOBAL__N_18g_millisE
+                0x20000000        0x4 system_init.o
+ .bss._ZZN3ota5Crc325tableEvE4init
+                0x20000004        0x1 rollback.o
+                0x20000004                ota::Crc32::table()::init
+ *fill*         0x20000005        0x3 
+ .bss._ZZN3ota5Crc325tableEvE1t
+                0x20000008      0x400 rollback.o
+                0x20000008                ota::Crc32::table()::t
+ *(COMMON)
+                0x20000408                        _ebss = .
+OUTPUT(ota_bootloader.elf elf32-littlearm)
+LOAD linker stubs
+
+.ARM.attributes
+                0x00000000       0x2f
+ .ARM.attributes
+                0x00000000       0x21 startup.o
+ .ARM.attributes
+                0x00000021       0x2d main.o
+ .ARM.attributes
+                0x0000004e       0x2d system_init.o
+ .ARM.attributes
+                0x0000007b       0x2d uart2.o
+ .ARM.attributes
+                0x000000a8       0x2d flash_driver.o
+ .ARM.attributes
+                0x000000d5       0x2d rollback.o
+ .ARM.attributes
+                0x00000102       0x2d uart_receiver.o
+ .ARM.attributes
+                0x0000012f       0x2d signature_verify.o
+ .ARM.attributes
+                0x0000015c       0x2d libc_shim.o
+ .ARM.attributes
+                0x00000189       0x2d led.o
+ .ARM.attributes
+                0x000001b6       0x2d third_party/ed25519/src/verify.o
+ .ARM.attributes
+                0x000001e3       0x2d third_party/ed25519/src/sha512.o
+ .ARM.attributes
+                0x00000210       0x2d third_party/ed25519/src/ge.o
+ .ARM.attributes
+                0x0000023d       0x2d third_party/ed25519/src/fe.o
+ .ARM.attributes
+                0x0000026a       0x2d third_party/ed25519/src/sc.o
+
+.comment        0x00000000       0x26
+ .comment       0x00000000       0x26 main.o
+                                 0x27 (size before relaxing)
+ .comment       0x00000026       0x27 system_init.o
+ .comment       0x00000026       0x27 uart2.o
+ .comment       0x00000026       0x27 flash_driver.o
+ .comment       0x00000026       0x27 rollback.o
+ .comment       0x00000026       0x27 uart_receiver.o
+ .comment       0x00000026       0x27 signature_verify.o
+ .comment       0x00000026       0x27 libc_shim.o
+ .comment       0x00000026       0x27 led.o
+ .comment       0x00000026       0x27 third_party/ed25519/src/verify.o
+ .comment       0x00000026       0x27 third_party/ed25519/src/sha512.o
+ .comment       0x00000026       0x27 third_party/ed25519/src/ge.o
+ .comment       0x00000026       0x27 third_party/ed25519/src/fe.o
+ .comment       0x00000026       0x27 third_party/ed25519/src/sc.o
