@@ -5,7 +5,7 @@
 //                     "X-Signature" carries the 64-byte Ed25519 signature
 //                     as 128 hex characters.
 //   GET  /status    - returns JSON with current transfer progress, for the
-//                     "Web Dashboard" box in your diagram.
+//                     "Web Dashboard" box in the diagram.
 #pragma once
 
 #include <cstdint>
@@ -25,4 +25,4 @@ struct TransferStatus {
 // to the STM32 over UART.
 void http_server_start(UartLink* link, TransferStatus* status);
 
-} // namespace gateway
+} 
