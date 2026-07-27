@@ -49,4 +49,4 @@ bool confirm_current_firmware();
 // confirmed - the bootloader should fall back to `active_bank`.
 bool should_rollback(const BootFlags& flags);
 
-} // namespace boot
+} 
