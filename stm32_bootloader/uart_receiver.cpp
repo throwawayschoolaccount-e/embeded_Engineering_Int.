@@ -150,4 +150,4 @@ ReceiveResult listen_for_update(uint32_t listen_window_ms, Bank currently_active
     return ReceiveResult::SUCCESS;
 }
 
-} // namespace boot
+} 
