@@ -7,9 +7,8 @@
 
 // GPIO4 (TX) -> STM32 RX/D0 (USART2 RX)
 // GPIO5 (RX) -> STM32 TX/D1 (USART2 TX)
-// Don't forget to tie GND between the two boards.
-// Note: USART2 is shared with the ST-LINK's USB virtual COM port, so avoid
-// opening a serial terminal on that COM port while the OTA link is in use.
+
+
 #define OTA_UART        uart1
 #define OTA_UART_TX_PIN 4
 #define OTA_UART_RX_PIN 5
@@ -124,4 +123,4 @@ UartResult UartLink::send_firmware(const uint8_t* data,
     return UartResult::OK;
 }
 
-} // namespace gateway
+} 
