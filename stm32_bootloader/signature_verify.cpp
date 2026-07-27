@@ -29,4 +29,4 @@ bool verify_firmware_signature(const uint8_t signature[ED25519_SIGNATURE_SIZE],
     return ed25519_verify(signature, message, message_len, OTA_PUBLIC_KEY) != 0;
 }
 
-} // namespace boot
+} 
