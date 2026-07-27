@@ -64,4 +64,4 @@ void deinit() {
     RCC->APB1ENR &= ~RCC_APB1ENR_USART2EN;
 }
 
-} // namespace uart2
+} 
