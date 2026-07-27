@@ -16,8 +16,8 @@ void send_buffer(const uint8_t* data, size_t len);
 bool receive_byte(uint8_t* out, uint32_t timeout_ms);
 bool receive_buffer(uint8_t* out, size_t len, uint32_t timeout_ms);
 
-// Disables USART2 and its clock - used right before jumping to the
+// Disables USART2 and its clock used right before jumping to the
 // application so it starts from a clean peripheral state.
 void deinit();
 
-} // namespace uart2
+} 
