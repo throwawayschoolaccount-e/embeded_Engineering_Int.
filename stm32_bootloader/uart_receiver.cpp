@@ -63,9 +63,7 @@ bool receive_packet(uint8_t* payload_out, uint16_t* payload_len_out,
         memcpy(payload_out, buf + ota::HEADER_SIZE, hdr.length);
     }
 
-    // Distinct "we actually received a valid frame" pulse - different from
-    // the idle heartbeat toggle, so you can visually tell "alive and
-    // listening" apart from "real communication happened".
+    // flickering ld2 led to show that it's working
     led::on();
     sys::delay_ms(150);
     led::off();
@@ -73,8 +71,7 @@ bool receive_packet(uint8_t* payload_out, uint16_t* payload_len_out,
     return true;
 }
 
-} // namespace
-
+} 
 ReceiveResult listen_for_update(uint32_t listen_window_ms, Bank currently_active_bank) {
     uint32_t start_tick = sys::millis();
 
