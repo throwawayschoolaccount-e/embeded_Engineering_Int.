@@ -1,17 +1,17 @@
-# Wiring this into your application firmware
+# Wiring this into the application firmware
 
 The bootloader's rollback logic depends on the **application** telling it
 "I'm healthy" after a fresh update. Without this, a new image that boots
 but is subtly broken would otherwise be treated as permanently active.
 
-In your application's startup code (after your own sanity/self-checks —
+In the application's startup code (after your own sanity/self-checks —
 e.g. sensors initialize, watchdog is running, no fault flags set):
 
 ```cpp
-#include "rollback.h" // copy or share this header with the application build
+#include "rollback.h" 
 
 void app_main() {
-    // ... your own init and self-test ...
+    // ... init and self-test ...
 
     boot::confirm_current_firmware(); // marks this bank as the new "active" bank
 
