@@ -22,4 +22,4 @@ enum class ReceiveResult {
 // calls mark_update_pending() so the boot decision logic will try it next.
 ReceiveResult listen_for_update(uint32_t listen_window_ms, Bank currently_active_bank);
 
-} // namespace boot
+} 
