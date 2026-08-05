@@ -1,6 +1,6 @@
 [ota_system_explained.md](https://github.com/user-attachments/files/30750844/ota_system_explained.md)# Secure OTA Firmware Update System: How It Works
 
-A walkthrough of every piece of code in this project, what it does, and how to know it's actually working when you run it.
+A walkthrough of every piece of code in this project, what it does, and how to know it works.
 
 ---
 
