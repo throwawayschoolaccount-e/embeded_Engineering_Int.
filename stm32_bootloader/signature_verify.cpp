@@ -11,16 +11,12 @@ extern "C" {
 }
 
 namespace boot {
-
-// Paste the 32-byte public key generated on the host machine here.
-// Generate with the library's key creation tool or any standard Ed25519
-// keygen; keep the matching private key ONLY on the host that signs builds.
+    //place holder public key
 const uint8_t OTA_PUBLIC_KEY[ED25519_PUBLIC_KEY_SIZE] = {
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-    // TODO: replace with real public key bytes.
 };
 
 bool verify_firmware_signature(const uint8_t signature[ED25519_SIGNATURE_SIZE],
